@@ -16,8 +16,47 @@ function getHumanChoice(){
 
 
 
+const buttons = document.querySelectorAll("button");
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+  // and for each one we add a 'click' listener
+  button.addEventListener("click", () => {
+    let computerPick = getComputerChoice();
+    alert(button.value);
+    alert(computerPick);
+        
+        if (computerPick == 'rock' && button.value == 'rock'){
+            alert("It's a Tie");
+    }   else if (computerPick == 'rock' && button.value == 'paper'){
+            alert("You human won");
+    }   else if (computerPick == 'rock' && button.value=='scissors'){
+            alert("Computer has won");
+    }   else if (computerPick == 'paper' && button.value=='rock'){
+        alert("Computer has won");
+    }   else if (computerPick == 'paper' && button.value=='paper'){
+        alert("It's a Tie");
+    }   else if (computerPick == 'paper' && button.value=='scissors'){
+        alert("You human won");
+    }   else if (computerPick == 'scissors' && button.value=='rock'){
+        alert("You human won");
+    }   else if (computerPick == 'scissors' && button.value=='paper'){
+        alert("Computer has won");
+    }   else if (computerPick == 'scissors' && button.value=='scissors'){
+        alert("It's a Tie");
+    }
 
 
+
+    
+  });
+});
+
+
+
+
+
+/*
 function playGame(){
     function playRound(computerPick, humanPick){
 
@@ -60,40 +99,40 @@ function playGame(){
 
 
 
-    var humanScore = 0;
-    var computeScore= 0;  
+                    var humanScore = 0;
+                    var computeScore= 0;  
 
     
  
- 
-    var computerPick = getComputerChoice();
-    console.log(computerPick);
-    var humanPick = getHumanChoice();
-    console.log(humanPick); 
-playRound(computerPick,humanPick);
-var computerPick = getComputerChoice();
-console.log(computerPick);
-var humanPick = getHumanChoice();
-console.log(humanPick);
- playRound(computerPick,humanPick);
- var computerPick = getComputerChoice();
-    console.log(computerPick);
-    var humanPick = getHumanChoice();
-    console.log(humanPick);
- playRound(computerPick,humanPick);
- var computerPick = getComputerChoice();
-    console.log(computerPick);
-    var humanPick = getHumanChoice();
-    console.log(humanPick);
- playRound(computerPick,humanPick);
- var computerPick = getComputerChoice();
-    console.log(computerPick);
-    var humanPick = getHumanChoice();
-    console.log(humanPick);
-playRound(computerPick,humanPick);
+            
+                var computerPick = getComputerChoice();
+                console.log(computerPick);
+                var humanPick = getHumanChoice();
+                console.log(humanPick); 
+            playRound(computerPick,humanPick);
+            var computerPick = getComputerChoice();
+            console.log(computerPick);
+            var humanPick = getHumanChoice();
+            console.log(humanPick);
+            playRound(computerPick,humanPick);
+            var computerPick = getComputerChoice();
+                console.log(computerPick);
+                var humanPick = getHumanChoice();
+                console.log(humanPick);
+            playRound(computerPick,humanPick);
+            var computerPick = getComputerChoice();
+                console.log(computerPick);
+                var humanPick = getHumanChoice();
+                console.log(humanPick);
+            playRound(computerPick,humanPick);
+            var computerPick = getComputerChoice();
+                console.log(computerPick);
+                var humanPick = getHumanChoice();
+                console.log(humanPick);
+            playRound(computerPick,humanPick);
 
 
-    console.log(humanScore,computeScore);
+                console.log(humanScore,computeScore);
 }
 
 
@@ -105,4 +144,4 @@ playRound(computerPick,humanPick);
 playGame();
 
 
-
+*/
