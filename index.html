@@ -8,11 +8,24 @@
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
-    <div class="images">
+    <div class="buttons-section">
+        <h2>Choose Wisely</h2>
         <button class="rock-button" value="rock">Rock</button>
         <button class="paper-button" value="paper">Paper</button>
         <button class="scissors-button" value="scissors">Scissors</button>
     </div>
+    <div class="choices-section">
+        
+        <h3>Computer Choice: <p id="computerResult"></p></h3>
+        <h3>Your Choice: <p id="humanResult"></p></h3>
+        
+    </div>
+    <div class="score-section">
+        <h3 >Win:   <p id="playerScore"></p> </h3>
+        <h3 >Loose: <p id="computerScore"></p></h3>
+        <h3 >Tie:   <p id="tieScore"></p></h3>
+    </div>
+    <h1 id="winner"></h1>
     <script src="/script.js"></script>
 </body>
 </html>
