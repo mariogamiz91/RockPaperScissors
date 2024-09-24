@@ -12,6 +12,7 @@ const scoreSection = document.querySelector(".score-section");
 
 const newGameButton = document.createElement('button');
 newGameButton.textContent = 'New game!';
+newGameButton.classList.add("newgame-button")
 
 
 
